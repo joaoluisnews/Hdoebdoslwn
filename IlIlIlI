@@ -1,0 +1,287 @@
+-- Load Rayfield UI
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+local ScriptCount = 0
+local RecentAdditions = {
+    "New key system"
+}
+
+local Window = Rayfield:CreateWindow({
+    Name = "Patronix Hub",
+    LoadingTitle = "Launching Patronix...",
+    LoadingSubtitle = "by interresante",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "Patronix",
+        FileName = "Config"
+    },
+    KeySystem = false,
+    KeySettings = {
+        Title = "Patronix Key",
+        Subtitle = "Enter your key to access",
+        Note = "Get your key from the Discord",
+        FileName = "PatronixKey",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = "Noobs"
+    }
+})
+
+local Tabs = {}
+local InfoTab = Window:CreateTab("📌 Info")
+InfoTab:CreateParagraph({ Title = "👑 Creator", Content = "interresante" })
+local TotalScriptParagraph = InfoTab:CreateParagraph({
+    Title = "📦 Total Scripts",
+    Content = "Counting..."
+})
+InfoTab:CreateParagraph({
+    Title = "🆕 Recently Added",
+    Content = table.concat(RecentAdditions, "\n")
+})
+InfoTab:CreateButton({
+    Name = "🔗 Copy Discord Invite",
+    Callback = function()
+        setclipboard("https://discord.gg/3DxYZEXaFv")
+        Rayfield:Notify({ Title = "Copied!", Content = "Discord invite copied.", Duration = 3 })
+    end
+})
+
+Tabs["Universal"] = Window:CreateTab("Universal")
+function AddScript(tab, name, url)
+    ScriptCount += 1
+    if not Tabs[tab] then Tabs[tab] = Window:CreateTab(tab) end
+    Tabs[tab]:CreateButton({
+        Name = name,
+        Callback = function()
+            Rayfield:Notify({ Title = "Patronix - "..tab, Content = "Running "..name, Duration = 3 })
+            loadstring(game:HttpGet(url))()
+        end
+    })
+end
+
+-- == UNIVERSAL ==
+AddScript("Universal","Mobile Dex","https://rawscripts.net/raw/Universal-Script-Keyless-mobile-dex-17888")
+AddScript("Universal","Adonis Admin Bypass","https://rawscripts.net/raw/Universal-Script-adonis-admin-bypass-19375")
+AddScript("Universal","Bring Parts V2","https://rawscripts.net/raw/Universal-Script-Bring-Parts-V2-28529")
+AddScript("Universal","Budgie Hub","https://rawscripts.net/raw/Universal-Script-Budgie-Hub-Universal-27853")
+AddScript("Universal","Nameless Admin","https://rawscripts.net/raw/Universal-Script-Nameless-Admin-35212")
+AddScript("Universal","OctoSpy","https://rawscripts.net/raw/Universal-Script-OctoSpy-22363")
+AddScript("Universal","Junix John Hub","https://raw.githubusercontent.com/junixaldrblxscripts/JunixHubScripts/refs/heads/main/johnhub")
+AddScript("Universal","Infinite Yield","https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
+
+-- == MUSCLE LEGENDS ==
+AddScript("Muscle Legends","Tokattk","https://raw.githubusercontent.com/2581235867/21/refs/heads/main/By%20Tokattk")
+AddScript("Muscle Legends","Speed Hub X","https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua")
+AddScript("Muscle Legends","Nova hub","https://raw.githubusercontent.com/EncryptedV10/Nova-Hub/refs/heads/main/Key%20System.lua")
+AddScript("Muscle Legends", "KTM", "https://raw.githubusercontent.com/zapstreams123/Key-System/refs/heads/main/Free")
+ 
+
+-- == SABER SIMULATOR ==
+AddScript("Saber Simulator","Devil Hub","https://raw.githubusercontent.com/DEVIL-Script/DEVIL-Hub/main/DEVIL-Hub-Main")
+
+-- == GROW A GARDEN ==
+AddScript("Grow a Garden","Speed Hub X","https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua")
+AddScript("Grow a Garden","Garden","https://raw.githubusercontent.com/wehjf/gardenload.github.io/refs/heads/main/erf.lua")
+AddScript("Grow a Garden","Custom Scripts","https://raw.githubusercontent.com/Nicuse101/CustomScripts/refs/heads/master/GrowAGarden")
+AddScript("Grow a Garden","Forge Hub","https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua")
+AddScript("Grow a Garden","NEOX Hub","https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/loader")
+AddScript("Grow a Garden","Moondiety Loader","https://raw.githubusercontent.com/m00ndiety/Moondiety/refs/heads/main/Loader")
+AddScript("Grow a Garden","Lumin Hub","https://lumin-hub.lol/loader.lua")
+
+-- == BLOX FRUITS ==
+AddScript("Blox Fruits","Redz Hub","https://rawscripts.net/raw/GRAVITY-Blox-Fruits-Actual-Redz-Hub-Script-Updated-40394")
+AddScript("Blox Fruits","Lua Armor","https://api.luarmor.net/files/v3/loaders/7d8a2a1a9a562a403b52532e58a14065.lua")
+AddScript("Blox Fruits","Solix New KeyUI","https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua")
+
+-- == BUILD A BOAT FOR TREASURE ==
+AddScript("Build A Boat For Treasure","Weshky Hub (OP Farm)","https://raw.githubusercontent.com/suntisalts/WeshkyHub/refs/heads/main/MainLoader.lua")
+AddScript("Build A Boat For Treasure","Unnamed Hub","https://raw.githubusercontent.com/YourRealjohn/Build-a-boat/refs/heads/main/UnnamedHub")
+AddScript("Build A Boat For Treasure","Solix V2 Loader","https://raw.githubusercontent.com/debunked69/solixloader/refs/heads/main/solix%20v2%20new%20loader.lua")
+
+-- == FEED YOUR PET ==
+AddScript("Feed Your Pet","Ashlabs","https://ashlabs.me/api/game?name=Feed-your-pet.lua")
+
+-- == STEAL A BRAINROT ==
+AddScript("Steal a Brainrot","Brainrot Hub","https://rawscripts.net/raw/Steal-a-Brainrot-New-keyless-script-43777")
+AddScript("Steal a Brainrot","Brainrot 2","https://pastefy.app/NvyIgjNN/raw")
+AddScript("Steal a Brainrot","Lurk Hack V4","https://raw.githubusercontent.com/egor2078f/lurkhackv4/refs/heads/main/main.lua")
+AddScript("Steal a Brainrot","Sentry V2 Hub","https://raw.githubusercontent.com/Hades2548/SentryV2Hub/refs/heads/main/Steal%20a%20brainrot.lua")
+AddScript("Steal a Brainrot","Qiwikox12","https://raw.githubusercontent.com/Qiwikox12/stubrawl/refs/heads/main/StealaBrainrot.txt")
+AddScript("Steal a Brainrot","ZELUX Loader","https://zelux.dev/scripts/StealaBrainrotScriptingZELUX.399540/loaderlua")
+AddScript("Steal a Brainrot","m00ndiety Loader","https://raw.githubusercontent.com/m00ndiety/Steal-a-brainrot/refs/heads/main/Steal-a-Brainrot")
+AddScript("Steal a Brainrot","Tbao Hub","https://raw.githubusercontent.com/tbao143/game/refs/heads/main/TbaoHubStealBranrot")
+AddScript("Steal a Brainrot","SpaceHub","https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/loader.lua")
+AddScript("Steal a Brainrot","BypassedFly","https://raw.githubusercontent.com/CensoredScripts/Scripts/refs/heads/main/BypassedFly.lua")
+AddScript("Steal a Brainrot","Chilli","https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua")
+
+-- == 99 NIGHTS IN THE FOREST ==
+AddScript("99 Nights in the Forest","NutHub","https://raw.githubusercontent.com/NutHub41/NutHub/main/loaderscript.txt")
+AddScript("99 Nights in the Forest","ExploitingIsFun Loader","https://api.exploitingis.fun/loader")
+AddScript("99 Nights in the Forest","Overfeel Loader","https://overfeel.xyz/over/feel/main.lua")
+
+-- == DEAD RAILS ==
+AddScript("Dead Rails","Auto Win With Bonds","https://raw.githubusercontent.com/m00ndiety/Dead-rails/refs/heads/main/Auto-Win-With-Bonds")
+
+-- == FORSAKEN ==
+AddScript("Forsaken","Catsaken Loader","https://raw.githubusercontent.com/gettaurine/scripts/refs/heads/main/catsakenloader.lua")
+AddScript("Forsaken","Rifton Loader","https://rifton.top/loader.lua")
+AddScript("Forsaken","Lua Armor Loader","https://api.luarmor.net/files/v3/loaders/255ac567ced3dcb9e69aa7e44c423f19.lua")
+
+-- == CLIMB AND JUMP TOWER ==
+AddScript("Climb and Jump Tower","Main Script","https://raw.githubusercontent.com/checkurasshole/Script/refs/heads/main/IQ")
+
+-- == INK GAME ==
+AddScript("Ink Game","Loader DevinHub","https://raw.githubusercontent.com/motonik-heldoaxxyy/DevinHub/refs/heads/main/main.txt")
+AddScript("Ink Game","Loader NysaDanielle","https://raw.githubusercontent.com/NysaDanielle/games/refs/heads/main/inkgame.lua")
+AddScript("Ink Game","Loader x2zu","https://raw.githubusercontent.com/x2zu/loader/main/scripts.lua")
+AddScript("Ink Game","danangori","https://raw.githubusercontent.com/danangori/ink-game/refs/heads/main/script-best")
+AddScript("Ink Game","Overflow","https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt")
+
+-- == BROOKHAVEN ==
+AddScript("Brookhaven","kigredns","https://raw.githubusercontent.com/kigredns/testUIDK/refs/heads/main/panel.lua")
+AddScript("Brookhaven","orbitsc","https://orbitsc.net/brook")
+AddScript("Brookhaven","Jshdidhd","https://raw.githubusercontent.com/Jshdidhd/Jdhshdhdje/refs/heads/main/Protected_1468716168049338.lua.txt")
+AddScript("Brookhaven","TechHub - JAYXNCLIPZ","https://techhub.group/scripts/JAYXNCLIPZ/Slaptower.txt")
+
+-- == SLAP BATTLES ==
+AddScript("Slap Battles","Main Script","https://raw.githubusercotent.com/notzanocoddz4/BobHub/main/main.lua")
+
+-- == KAT ==
+AddScript("KAT","Main Script","https://raw.githubusercontent.com/NaikoScript/Kat-Plus/main/Script")
+
+-- == WEBBED ==
+AddScript("Webbed","Main Script","https://gist.githubusercontent.com/Dan7anaan/58c548732d3a84594eebdbfd38986559/raw/ac785cb4be234f5aef63044f01f457ea140b17b6/gistfile1.txt")
+
+-- == BLUE LOCK RIVALS ==
+AddScript("Blue Lock Rivals","Main Script","https://api.luarmor.net/files/v3/loaders/255ac567ced3dcb9e69aa7e44c423f19.lua")
+
+-- == EVADE ==
+AddScript("Evade","Main Script","https://raw.githubusercontent.com/LabyCatUser/rawr/refs/heads/main/evade.lua")
+
+-- == ARISE CROSSOVER ==
+AddScript("Arise Crossover","Main Script","https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/Arise%20Crossover")
+
+-- == Steal anime ==
+AddScript("Steal anime", "Frosties", "https://raw.githubusercontent.com/cattercatty/Scripts/main/Loader.lua")
+
+
+
+-- == steal an anime==
+
+AddScript("Steal an anime", "ToraIsMe", "https://raw.githubusercontent.com/gumanba/Scripts/main/StealanAnime2")
+
+AddScript("Steal an anime", "Sylo", "https://raw.githubusercontent.com/sylolua/PoopHub/refs/heads/main/Loader")
+
+
+-- == Murder Mystery 2 ==
+AddScript("Murder Mystery 2", "Forge Hub", "https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua")
+AddScript("Murder Mystery 2", "Yarhm", "https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua")
+AddScript("Murder Mystery 2", "Solix New KeyUI", "https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua")
+AddScript("Murder Mystery 2", "Noova Scripts", "https://raw.githubusercontent.com/NoovaScripts/roblox/refs/heads/main/MM2")
+AddScript("Murder Mystery 2", "Snowt Hub", "https://raw.githubusercontent.com/Snowt-Team/SNT-HUB/refs/heads/main/MM2.lua")
+AddScript("Murder Mystery 2", "Xhub Ultimate GUI", "https://raw.githubusercontent.com/Roblox-Exploits-0/Xhub/refs/heads/main/Updated/Ultimate_Gui.lua")
+
+
+-- == Blox Fruits ==
+AddScript("Blox Fruits", "W-SKID Hub", "https://raw.githubusercontent.com/NhatMinhVNQ/w-skid-hub/refs/heads/main/W-SKID-BF1.lua")
+AddScript("Blox Fruits", "RO HUB CODEX", "https://raw.githubusercontent.com/RO-HUB-CODEX/RO-HUB/refs/heads/main/bloxfruits.lua")
+AddScript("Blox Fruits", "Quartyz Script", "https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua")
+AddScript("Blox Fruits", "NatHub", "https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/bf.lua")
+AddScript("Blox Fruits", "Nicuse MainHub", "https://nicuse.xyz/MainHub.lua")
+
+
+-- == BIG Paintball 2 ==
+AddScript("BIG Paintball 2", "KAJUU Script", "https://raw.githubusercontent.com/KAJUU490/c5/refs/heads/main/kaju!31")
+
+-- == Grow a Garden ==
+AddScript("Grow a Garden", "Fisch Main", "https://raw.githubusercontent.com/Skibidiking123/Fisch1/refs/heads/main/FischMain")
+AddScript("Grow a Garden", "Koronis Hub", "https://koronis.xyz/hub.lua")
+
+-- == 99 Nights in the Forest ==
+AddScript("99 Nights in the Forest", "Chavels", "https://raw.githubusercontent.com/Chavels123/Loader/refs/heads/main/loader.lua")
+
+
+-- == All Star Tower Defense X ==
+AddScript("All Star Tower Defense X", "Xenith", "https://api.luarmor.net/files/v4/loaders/d7be76c234d46ce6770101fded39760c.lua")
+AddScript("All Star Tower Defense X", "Goomba Hub", "https://raw.githubusercontent.com/JustLevel/goombahub/main/goombahub.lua")
+AddScript("All Star Tower Defense X", "Jimi Hub", "https://raw.githubusercontent.com/bunnnwee/JimiHub/refs/heads/main/ASTDX-Normal")
+
+
+-- == Bubble Gum Simulator INFINITY ==
+AddScript("Bubble Gum Simulator INFINITY", "IdiotHub Loader", "https://raw.githubusercontent.com/IdiotHub/Scripts/main/Loader")
+AddScript("Bubble Gum Simulator INFINITY", "Banana Hub", "https://raw.githubusercontent.com/diepedyt/bui/refs/heads/main/BananaHubLoader.lua")
+AddScript("Bubble Gum Simulator INFINITY", "Overflow Loader", "https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt")
+AddScript("Bubble Gum Simulator INFINITY", "Vertex Loader", "https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring")
+AddScript("Bubble Gum Simulator INFINITY", "Somber Loader", "https://getsomber.com/loader.lua")
+AddScript("Bubble Gum Simulator INFINITY", "Amazon Loader", "https://raw.githubusercontent.com/Amazonek123/LoaderWrapGate/refs/heads/main/Loader.lua")
+AddScript("Bubble Gum Simulator INFINITY", "Strelizia Loader (GitHub)", "https://raw.githubusercontent.com/0vma/Strelizia/refs/heads/main/Loader.lua")
+AddScript("Bubble Gum Simulator INFINITY", "Strelizia Loader (Website)", "http://loader.strelizia.cc")
+AddScript("Bubble Gum Simulator INFINITY", "Solix V2 Loader", "https://raw.githubusercontent.com/debunked69/solixloader/refs/heads/main/solix%20v2%20new%20loader.lua")
+AddScript("Bubble Gum Simulator INFINITY", "Aze Loader", "https://raw.githubusercontent.com/de-ishi/scripts/refs/heads/main/Aze_Loader")
+AddScript("Bubble Gum Simulator INFINITY", "Discord0000 Script", "https://raw.githubusercontent.com/Discord0000/dontknow/refs/heads/main/Bubble%20Gum%20INFINITY/main.lua")
+AddScript("Bubble Gum Simulator INFINITY", "Luau.tech Loader", "https://luau.tech/build")
+
+
+-- == Dead Rails ==
+AddScript("Dead Rails", "Solix New KeyUI", "https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua")
+AddScript("Dead Rails", "Moondiety - Auto Bond", "https://raw.githubusercontent.com/m00ndiety/Dead-rails/refs/heads/main/Auto-Win-With-Bonds")
+AddScript("Dead Rails", "Nicuse Loader", "https://loader.nicuse.xyz")
+AddScript("Dead Rails", "NEOX Hub - Auto Bond", "https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/DeadRailsAutoBond")
+AddScript("Dead Rails", "Rifton Loader", "https://rifton.top/loader.lua")
+
+-- == Ink Game ==
+AddScript("Ink Game", "Astra Loader", "https://getastra.lol/loader.lua")
+AddScript("Ink Game", "NEOX Hub", "https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/InkGame")
+AddScript("Ink Game", "DarkClpher Script", "https://raw.githubusercontent.com/DarkClpher/RBX-Scripts/refs/heads/main/Ink%20Game/Main.luau")
+AddScript("Ink Game", "Moondiety Loader", "https://raw.githubusercontent.com/m00ndiety/Ink-Game/refs/heads/main/Ink-Game")
+AddScript("Ink Game", "Shmegh01", "https://raw.githubusercontent.com/shmegh01/InkGame/refs/heads/main/FreeKeyInkGame")
+AddScript("Ink Game", "Gumanba Loader", "https://raw.githubusercontent.com/gumanba/Scripts/main/InkGame")
+
+
+-- == Bee Swarm Simulator ==
+AddScript("Bee Swarm Simulator", "Kron Hub", "https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0")
+AddScript("Bee Swarm Simulator", "Kiwii Hub (Beta)", "https://raw.githubusercontent.com/KiwiiHub/KiwiiHub/refs/heads/main/Kiwii-Bss-Beta.lua")
+AddScript("Bee Swarm Simulator", "MacroV4", "https://scripts.macrov4.com/macrov4.lua")
+AddScript("Bee Swarm Simulator", "Atlas BSS", "https://raw.githubusercontent.com/Chris8889/atlasbss/main/script.lua")
+AddScript("Bee Swarm Simulator", "Verbal Hub", "https://raw.githubusercontent.com/VerbalHubz/Verbal-Hub/refs/heads/main/Bee%20Swarm%20Sim.Lua")
+
+
+-- == FORSAKEN ==
+AddScript("Forsaken", "Lumin Hub", "https://lumin-hub.lol/loader.lua")
+AddScript("Forsaken", "Overflow Loader", "https://raw.githubusercontent.com/OverflowBGSI/Overflow/refs/heads/main/loader.txt")
+AddScript("Forsaken", "Joystick Loader", "https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua")
+AddScript("Forsaken", "ExploitingIsFun Loader", "https://exploitingis.fun/loader")
+AddScript("Forsaken", "Antimony Loader", "https://raw.githubusercontent.com/Iyreeee/Antimony-Loader/main/loader.luau")
+AddScript("Forsaken", "Moondiety Loader", "https://raw.githubusercontent.com/m00ndiety/Forsaken/refs/heads/main/Forsaken.lua")
+AddScript("Forsaken", "NEOX Hub", "https://raw.githubusercontent.com/hassanxzayn-lua/NEOXHUBMAIN/refs/heads/main/loader")
+
+-- == BLUE LOCK RIVALS ==
+AddScript("Blue Lock Rivals", "XZuyaX Hub", "https://raw.githubusercontent.com/XZuuyaX/XZuyaX-s-Hub/refs/heads/main/Main.Lua")
+AddScript("Blue Lock Rivals", "Rinstyle - Ronaldo", "https://raw.githubusercontent.com/stylemakeritosh/Rinstyle/refs/heads/main/Ronaldo")
+AddScript("Blue Lock Rivals", "Soluna Script", "https://soluna-script.vercel.app/blue-lock-rivals.lua")
+
+
+-- == ADOPT ME ==
+AddScript("Adopt Me", "Cogito - Summer Event", "https://raw.githubusercontent.com/PabloOP-87/Cogito/refs/heads/main/Summer-Event")
+AddScript("Adopt Me", "Trade Scam Hub", "https://raw.githubusercontent.com/Nischit785/Trade-scam-Hub/refs/heads/main/Trade%20Scam%20hub")
+
+-- == ARISE CROSSOVER ==
+AddScript("Arise Crossover", "Solix V2 Loader", "https://raw.githubusercontent.com/debunked69/solixloader/refs/heads/main/solix%20v2%20new%20loader.lua")
+AddScript("Arise Crossover", "Nicuse Loader", "https://loader.nicuse.xyz")
+AddScript("Arise Crossover", "Solix New KeyUI", "https://raw.githubusercontent.com/debunked69/Solixreworkkeysystem/refs/heads/main/solix%20new%20keyui.lua")
+AddScript("Arise Crossover", "Discord0000 Script", "https://raw.githubusercontent.com/Discord0000/dontknow/refs/heads/main/arise_crossover/main.lua")
+
+
+-- == DIG ==
+AddScript("Dig", "Scylla Loader", "https://raw.githubusercontent.com/acezqqq/Scylla/refs/heads/main/Loader.lua")
+AddScript("Dig", "Lumin Hub", "https://lumin-hub.lol/loader.lua")
+AddScript("Dig", "ExploitingIsFun Loader", "https://api.exploitingis.fun/loader")
+AddScript("Dig", "Frostbyte Init", "https://init.frostbyte.lol")
+AddScript("Dig", "Solix V2 Loader", "https://raw.githubusercontent.com/debunked69/solixloader/refs/heads/main/solix%20v2%20new%20loader.lua")
+
+
+
+TotalScriptParagraph:Set({
+    Title = "📦 Total Scripts",
+    Content = tostring(ScriptCount).." scripts loaded."
+})
