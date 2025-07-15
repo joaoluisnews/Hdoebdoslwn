@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 local ScriptCount = 0
 local RecentAdditions = {
-    "New key system"
+    "20 new script"
 }
 
 local Window = Rayfield:CreateWindow({
@@ -278,6 +278,68 @@ AddScript("Dig", "Lumin Hub", "https://lumin-hub.lol/loader.lua")
 AddScript("Dig", "ExploitingIsFun Loader", "https://api.exploitingis.fun/loader")
 AddScript("Dig", "Frostbyte Init", "https://init.frostbyte.lol")
 AddScript("Dig", "Solix V2 Loader", "https://raw.githubusercontent.com/debunked69/solixloader/refs/heads/main/solix%20v2%20new%20loader.lua")
+
+
+AddScript("Ink Game", "x2zu Loader", "https://raw.githubusercontent.com/x2zu/loader/main/scripts.lua")
+AddScript("Ink Game", "Kaju Loader", "https://raw.githubusercontent.com/KAJUU490/c16/refs/heads/main/kaju14313")
+AddScript("Ink Game", "MortezaPlay Hub", "https://raw.githubusercontent.com/MortezaPlay/dd/refs/heads/main/MainHUB")
+AddScript("Ink Game", "FelipeHub", "https://raw.githubusercontent.com/FELIPEHUB1/Felipehub-scripts/refs/heads/main/Ink%20game")
+
+
+AddScript("Steal a Brainrot", "Comphub", "https://raw.githubusercontent.com/robloxcomphub/comphub/refs/heads/main/comphub.lua")
+AddScript("Steal a Brainrot", "Godor Loader", "https://raw.githubusercontent.com/godor1010/godor/refs/heads/main/0_steal_a_brainrot_2")
+
+
+AddScript("All Star Tower Defense X", "Yutohub", "https://raw.githubusercontent.com/Binintrozza/yutv2e/main/Yutohub")
+
+
+AddScript("Gunfight Arena", "Kaju Loader", "https://raw.githubusercontent.com/KAJUU490/b14/refs/heads/main/jumapell12334")
+
+
+AddScript("99 Nights in the Forest", "GGH Loader", "https://techhub.group/scripts/GGH/99nights.lua")
+AddScript("99 Nights in the Forest", "SpaceHub", "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/loader.lua")
+
+
+AddScript("Muscle Legends", "Vyntric Hub", "https://raw.githubusercontent.com/ttvkaiser-n-Exv/Vyntric-Hub/refs/heads/main/Muscle-Legends/.lua")
+
+
+AddScript("Forsaken", "Azure Realer", "https://raw.githubusercontent.com/azuresfriend/twotime_scripts/refs/heads/main/noli_realer.lua")
+AddScript("Forsaken", "Ivanetta", "https://raw.githubusercontent.com/ivannetta/ShitScripts/main/forsaken.lua")
+
+
+AddScript("Climb and Jump Tower", "SoulForge Loader", "https://soulforge.pro/loader.lua")
+
+
+AddScript("Breaking Point", "Naiko Script", "https://raw.githubusercontent.com/NaikoScript/Breaking-Plus/main/Script")
+
+
+AddScript("KAT", "Naiko Script", "https://raw.githubusercontent.com/NaikoScript/Kat-Plus/main/Script")
+
+
+
+AddScript("Factory RNG", "BandzHub", "https://raw.githubusercontent.com/breakneckv099/FactoryRNG-BandzHub/refs/heads/main/Factory%20RNG.lua")
+
+
+AddScript("The Rake REMASTERED", "Napoleon Hub", "https://raw.githubusercontent.com/raydjs/napoleonHub/refs/heads/main/src.lua")
+
+
+AddScript("Dead Rails", "Stillwater Prison TP", "https://raw.githubusercontent.com/m00ndiety/Stillwater/refs/heads/main/obf_Prisonteleport.lua.txt")
+
+
+AddScript("Fling Things and People", "Friendly", "https://raw.githubusercontent.com/Brovaky/Friendly/refs/heads/main/Friendly")
+
+
+AddScript("Prison Life", "TrapeZ Hub", "https://raw.githubusercontent.com/HflixDev/TrapeZ-hub-prison-life/refs/heads/main/prison%20life%20hub%20trape.txt")
+
+
+AddScript("My Singing Brainrot", "SpaceHub", "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/loader.lua")
+
+
+AddScript("Ability Wars", "Prarod Loader", "https://raw.githubusercontent.com/Prarod/ability/refs/heads/main/wars")
+
+
+AddScript("Violence District", "Singularity Loader", "https://singularityrblx.onrender.com/api/loader.lua")
+
 
 
 
