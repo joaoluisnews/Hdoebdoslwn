@@ -342,7 +342,48 @@ AddScript("Violence District", "Singularity Loader", "https://singularityrblx.on
 
 
 
+AddScript("Universal", "cobalt spy -best spy", "https://github.com/notpoiu/cobalt/releases/latest/download/Cobalt.luau")
 
+AddScript("Steal a Car", "Sar3kezm Hub", "https://pastebin.com/raw/1KPJuHE6")
+
+AddScript("Steal a Car", "MOLYN SPAM", "https://raw.githubusercontent.com/Lakany/MOLYN-SPAM/refs/heads/main/README.md")
+
+
+AddScript("Steal a Car", "forkT3 Script", "https://raw.githubusercontent.com/forkT3/Steal-A-Cars/main/Steal-A-Car.lua")
+-- Discord: https://discord.gg/DFKeXEgBW7
+
+
+AddScript("Universal", "Sigma Spy", "https://raw.githubusercontent.com/depthso/Sigma-Spy/refs/heads/main/Main.lua")
+
+AddScript("Universal", "Infinite Yield", "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
+
+AddScript("24 Hours in Elevator", "Main Script", "https://raw.githubusercontent.com/gumanba/Scripts/main/24HoursinElevator")
+
+AddScript("Asylum Life", "Godor", "https://raw.githubusercontent.com/godor1010/godor/refs/heads/main/asylum_life_")
+
+AddScript("Octopus Game", "Lebumbum", "https://raw.githubusercontent.com/lebumbum/project1335/refs/heads/main/untilknown")
+
+AddScript("Octopus Game", "Welomenchaina", "https://raw.githubusercontent.com/welomenchaina/Loader/refs/heads/main/ScriptLoader")
+
+AddScript("One Punch Training", "checkurasshole", "https://raw.githubusercontent.com/checkurasshole/Script/refs/heads/main/IQ")
+
+AddScript("Volleyball Legends - Sigma Hub", "Xm2iufas09ijmF", "https://raw.githubusercontent.com/Xm2iufas09ijmF/sigma-hub/refs/heads/main/temp.lua")
+
+AddScript("Volleyball Legends - Napoleon Hub", "raydjs", "https://raw.githubusercontent.com/raydjs/napoleonHub/refs/heads/main/src.lua")
+
+
+AddScript("Volleyball Legends - Skibidi Menu", "SkibidiCen", "https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code")
+
+
+
+AddScript("Squid Game X", "gumanba", "https://raw.githubusercontent.com/gumanba/Scripts/main/SquidGameX")
+
+
+
+AddScript("Strongman Simulator", "Main Script", "https://raw.githubusercontent.com/gumanba/Scripts/main/StrongmanSim")
+
+
+AddScript("Strongman Simulator", "KhSaeed90 Version", "https://github.com/KhSaeed90/Roblox/raw/refs/heads/workspace/6766156863")
 TotalScriptParagraph:Set({
     Title = "📦 Total Scripts",
     Content = tostring(ScriptCount).." scripts loaded."
