@@ -355,8 +355,6 @@ AddScript("Steal a Car", "forkT3 Script", "https://raw.githubusercontent.com/for
 
 AddScript("Universal", "Sigma Spy", "https://raw.githubusercontent.com/depthso/Sigma-Spy/refs/heads/main/Main.lua")
 
-AddScript("Universal", "Infinite Yield", "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
-
 AddScript("24 Hours in Elevator", "Main Script", "https://raw.githubusercontent.com/gumanba/Scripts/main/24HoursinElevator")
 
 AddScript("Asylum Life", "Godor", "https://raw.githubusercontent.com/godor1010/godor/refs/heads/main/asylum_life_")
